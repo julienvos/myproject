@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="mystyling.css">
+
+
+
+    <!-- <style>
+        /* tag selector */
+        span {
+            color: darkmagenta;
+        }
+        ol {
+            color: 3px solid red;
+        }
+        .mijnclass1 {
+            /* blue is more important */
+            color: blueviolet !important;
+        }
+
+        #mijnid {
+            color: brown;
+        }
+
+
+
+    </style> -->
+</head>
+<body>
+
+    <button onclick="alert('het werkt')">
+        klik hier
+    </button>
+
+    <a href="tweede.html"> mijn link</a>
+
+    <!-- met nieuw tabblad -->
+    <a href="https://w3schools.com" target="_blank">w3 schools</a>
+
+    <span style="color: crimson; font-size: 150%;">Dit is mijn eerste text</span>
+    <span>Tweede tekst</span>
+
+    <p></p>
+
+    <img src="https://th.bing.com/th/id/OIP.sH8aBAAK4dY114GHSoHMTgHaEK?w=272&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7">
+
+    <!-- unordered list -->
+    <ul>
+        <li>
+            point 1
+        </li>
+        <li id="mijnid">
+            point 2
+        </li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>
+        <li class="mijnclass1">
+            point 3
+        </li>
+        <li>
+            point 4
+        </li>
+    </ol>
+
+
+
+
+    <!-- tag -->
+    <table> 
+        <!-- table row    element -->
+        
+
+        <tr>
+            <td>
+                Row 1
+            </td>
+        </tr>
+        <td>Row 2</td>
+    </table>
+
+    <table>
+        <thead id="eenElement">
+            <tr>
+                <th>
+                    Kolom 1
+                </th>
+                Kolom 2
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <!-- table data   element -->
+            <td>
+                Hoi
+            </td>
+            <td>
+                Column 2
+            </td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>
+                    wat text
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+<script>
+    console.log('some text');
+    var eenlijst = document.getElementById('eenlijst');
+
+    var eenElement = document.getElementById('eenElement');
+    eenElement.style.backgroundColor = "green";
+
+    function setBackgroundColor (hetElement, color) {
+        hetElement.style.backgroundColor = color;
+    }
+
+    setBackgroundColor(eenElement, 'blue');
+
+</script>
+</html>

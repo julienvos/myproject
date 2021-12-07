@@ -1,0 +1,20 @@
+    /* tag selector */
+    span {
+        color: darkmagenta;
+    }
+    ol {
+        color: 3px solid red;
+    }
+    .mijnclass1 {
+        /* blue is more important */
+        color: blueviolet !important;
+    }
+
+    #mijnid {
+        color: brown;
+    }
+    /* hover  is dus hover met de muis over de tag */
+    a:hover{
+        text-decoration: line-through;
+        color: greenyellow;
+    }
